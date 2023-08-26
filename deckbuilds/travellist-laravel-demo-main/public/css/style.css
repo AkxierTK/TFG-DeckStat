@@ -1,0 +1,110 @@
+.divCartas{
+width: 50%;
+height:100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.listaCartas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carta{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+}
+
+.cartaImg{
+    width: 150px;
+    margin: 10px;
+    alt: "Imagen no disponible";
+}
+
+.buscador{
+    width: 100%;
+}
+
+.listaCartasPadre{
+    width: 100%;
+}
+
+.divLista{
+    width: 50%;
+}
+
+.nombre{
+    margin-left: 5%;
+}
+
+.loading{
+    width: 200px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toggle {
+  background-color: #ddddde;
+  border-radius: 60px;  
+  box-shadow: 0 1px 1px 0 rgba(255,255,255,.4), 0 1px 0 0 rgba(0,0,0,0.10) inset;
+  cursor: pointer;
+  width: 122px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: all .25s linear;
+}
+.toggle .slide {
+  color: #818283;
+  color: rgba(0,0,0,.15);
+  background: #efefef;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  height: 36px;
+  width: 36px;
+  position: absolute;
+  top: 6.5px;
+  left: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15), 0 1px 1px 0 rgba(255,255,255,.8) inset;
+  transition: all 0.3s cubic-bezier(0.43, 1.3, 0.86, 1);
+}
+.toggle .slide span{
+    text-shadow: 0 1px 1px rgba(255,255,255,.7), 0 0 1px rgba(0,0,0,.3);       
+}
+.toggle .slide:before, 
+.toggle .slide:after {
+  color: #FFF;
+  content: "\01F512";
+  font-family: fontAwesome;
+  font-size: 24px;
+  font-weight: 400;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+}
+.toggle .slide:before {
+  right: -50px;
+  color: #2a2b2c;
+  opacity: 0.2;
+}
+.toggle .slide:after {
+  content: "\01F513";
+  left: -50px;
+  color: #00ba00;
+}
+.toggle.on {
+  background: #00dc00;
+}
+.toggle.on .slide {
+  left: 80px;
+  color: #00d100;
+}
